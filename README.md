@@ -1,6 +1,19 @@
 # quarkus-serverless project
 
-Esta aplicación es un ejemplo básico entre 
+This is an application to run Quarkus Native App in Ibm Cloud Functions as an Action.
+I'm using the native mode building with Docker:
+
+```shell script
+./gradlew build -Dquarkus.package.type=native -Dquarkus.native.container-build=true
+```
+
+Then, 
+
+```shell script
+docker build -f src/main/docker/Dockerfile.native -t <target> . 
+```
+
+
 
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
